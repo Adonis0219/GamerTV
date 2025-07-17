@@ -1,4 +1,4 @@
-using System;
+      using System;
 using UnityEngine;
 
 // 델리게이트 이벤트 (Delegate Event)
@@ -10,12 +10,12 @@ public class TestDele
 
     public event TestEvent testEvent;
 
-    public void EventStart()
+    public void StartEvent()
     {
         testEvent.Invoke();
     }
 }
-
+ 
 public class DelEventTest1 : MonoBehaviour
 {
     private void Start()
@@ -24,8 +24,12 @@ public class DelEventTest1 : MonoBehaviour
         testDele.testEvent += Test1;
         testDele.testEvent += Test2;
         testDele.testEvent += Test3;
-        
-        testDele.EventStart();
+
+        //testDele.testEvent = Test1;
+
+        //testDele.testEvent.Invoke();
+
+        testDele.StartEvent();
     }
     
     public void Test1() { Debug.Log("Test1");}
