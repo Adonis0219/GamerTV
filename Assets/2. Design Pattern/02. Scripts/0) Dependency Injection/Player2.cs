@@ -7,15 +7,10 @@ namespace DI
     {
         public enum AttackType
         {
-            BaseAttack, SpecialAttack
+            BaseAttack, SpecialAttack, CriticalAttack
         }
 
         AttackType attackType;
-
-        void Start()
-        {
-
-        }
 
         public void Attack()
         {
@@ -31,5 +26,6 @@ namespace DI
 
         public void BaseAttack() { Debug.Log("Base Attack!"); }
         public void SpecialAttack() { Debug.Log("Special Attack!"); }
+        public void CriticalAttack() { Debug.Log("Critical Attack!"); }
     }
 }
