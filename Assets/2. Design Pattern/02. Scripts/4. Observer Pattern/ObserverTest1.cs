@@ -11,7 +11,7 @@ public class ObserverTest1 : MonoBehaviour
     {
         button.onClick.AddListener(() =>
         {
-            subject.action.Invoke();
+            //subject.action.Invoke();
         });
     }
 }

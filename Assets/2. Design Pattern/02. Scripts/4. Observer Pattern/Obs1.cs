@@ -7,7 +7,7 @@ public class Obs1 : MonoBehaviour
 
     private void Start()
     {
-        subject.action += UpdateObs;
+        //subject.action += UpdateObs;
     }
 
     public void UpdateObs()
